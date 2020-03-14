@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BuildServerSettings">
-    <option name="LOGIN" value="" />
-    <option name="SERVER_URL" value="http://buildserver" />
+    <option name="LOGIN" value="admin" />
+    <option name="SERVER_URL" value="http://localhost:8111" />
     <option name="REMEMBER_ME" value="true" />
     <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
     <option name="INSPECTIONS_BUILD_TYPE_IDS" />
@@ -23,24 +23,28 @@
     <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
     <option name="showStatusBarWidget" value="true" />
+    <treeState key="project">
+      <selectedPath>
+        <pathElement>
+          <option name="myNodeId" value="helperText" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
+        </pathElement>
+      </selectedPath>
+    </treeState>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5940a942-e75a-4e99-8179-274536bca47d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/setup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/linked_list_int.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/linked_list_int/version.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linked_list_int.gemspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/linked_list_int_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/linked_list_int.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/linked_list_int.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/linked_list_int.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/linked_list_int/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/linked_list_int/version.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked_list_int.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list_int.gemspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/linked_list_int_test.rb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +52,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Z5sOktpGBo3G4L2UeOeoG8QwAo" />
@@ -59,12 +68,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.youtrack.notifications" value="" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="SvnConfiguration">
@@ -77,11 +87,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584140259898</updated>
-      <workItem from="1584140261045" duration="131000" />
+      <workItem from="1584140261045" duration="5346000" />
     </task>
+    <task id="LOCAL-00001" summary="Initialized Repository&#10;&#10;Remote branch attached.">
+      <created>1584140524976</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584140524977</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers>
       <YouTrack url="https://macbook-pro.local:8443">
-        <option name="defaultSearch" value="project:{ Linked-List Interface} #Unresolved " />
+        <option name="defaultSearch" value="project:{ Linked-List Interface} #{Setup}" />
         <option name="shouldFormatCommitMessage" value="true" />
         <username>admin</username>
       </YouTrack>
@@ -90,26 +108,59 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initialized Repository&#10;&#10;Remote branch attached." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialized Repository&#10;&#10;Remote branch attached." />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="64" y="144" key="#Live_Templates" timestamp="1584194249474">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="64" y="144" key="#Live_Templates/0.23.1680.975@0.23.1680.975" timestamp="1584194249474" />
     <state x="436" y="175" key="#Servers" timestamp="1584140391310">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="436" y="175" key="#Servers/0.23.1680.975@0.23.1680.975" timestamp="1584140391310" />
-    <state width="1578" height="272" key="GridCell.Tab.0.bottom" timestamp="1584140266686">
+    <state x="573" y="358" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1584194585385">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1578" height="272" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1584140266686" />
-    <state width="1578" height="272" key="GridCell.Tab.0.center" timestamp="1584140266684">
+    <state x="573" y="358" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.23.1680.975@0.23.1680.975" timestamp="1584194585385" />
+    <state x="423" y="112" key="CommitChangelistDialog2" timestamp="1584140524647">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1578" height="272" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1584140266684" />
-    <state width="1578" height="272" key="GridCell.Tab.0.left" timestamp="1584140266682">
+    <state x="423" y="112" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1584140524647" />
+    <state width="1578" height="271" key="GridCell.Tab.0.bottom" timestamp="1584192761490">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1578" height="272" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1584140266682" />
-    <state width="1578" height="272" key="GridCell.Tab.0.right" timestamp="1584140266685">
+    <state width="1578" height="271" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1584192761490" />
+    <state width="1578" height="271" key="GridCell.Tab.0.center" timestamp="1584192761489">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1578" height="272" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1584140266685" />
+    <state width="1578" height="271" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1584192761489" />
+    <state width="1578" height="271" key="GridCell.Tab.0.left" timestamp="1584192761489">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state width="1578" height="271" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1584192761489" />
+    <state width="1578" height="271" key="GridCell.Tab.0.right" timestamp="1584192761490">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state width="1578" height="271" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1584192761490" />
+    <state x="345" y="149" key="SettingsEditor" timestamp="1584194587587">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="345" y="149" key="SettingsEditor/0.23.1680.975@0.23.1680.975" timestamp="1584194587587" />
+    <state x="436" y="250" key="Vcs.Push.Dialog.v2" timestamp="1584140530204">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="436" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1584140530204" />
+    <state x="428" y="235" width="816" height="550" key="find.popup" timestamp="1584193018663">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="428" y="235" width="816" height="550" key="find.popup/0.23.1680.975@0.23.1680.975" timestamp="1584193018663" />
+    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1584194294937">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1584194294937" />
   </component>
 </project>

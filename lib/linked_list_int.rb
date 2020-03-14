@@ -1,7 +1,11 @@
+# Copyright (C) 2020 Diligent Software LLC. All rights reserved. Released
+# under the MIT License.
+
 require "linked_list_int/version"
 
-module LinkedListInt
-  class Error < StandardError;
-  end
-  # Your code goes here...
+# LinkedListInt.
+# @abstract
+# $DESCRIPTION$.
+class LinkedListInt
 end
+
