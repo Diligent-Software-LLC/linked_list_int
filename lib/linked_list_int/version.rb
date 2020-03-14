@@ -3,7 +3,7 @@
 
 # LinkedListInt.
 # @abstract
-# $DESCRIPTION.
+# A Linked-List data structure interface.
 class LinkedListInt
   VERSION = ::VERSION
 end

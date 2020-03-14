@@ -34,17 +34,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5940a942-e75a-4e99-8179-274536bca47d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/linked_list_int.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/linked_list_int.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/linked_list_int.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/linked_list_int/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/linked_list_int/version.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked_list_int.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list_int.gemspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/linked_list_int_test.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked_list_int_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/linked_list_int_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +69,13 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
+      <list>
+        <option value="$PROJECT_DIR$" />
+      </list>
+    </option>
+  </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -99,7 +99,7 @@
     <option name="localTasksCounter" value="2" />
     <servers>
       <YouTrack url="https://macbook-pro.local:8443">
-        <option name="defaultSearch" value="project:{ Linked-List Interface} #{Setup}" />
+        <option name="defaultSearch" value="project:{ Linked-List Interface}#{ In Progress}  " />
         <option name="shouldFormatCommitMessage" value="true" />
         <username>admin</username>
       </YouTrack>
@@ -158,9 +158,9 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="428" y="235" width="816" height="550" key="find.popup/0.23.1680.975@0.23.1680.975" timestamp="1584193018663" />
-    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1584194294937">
+    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1584207437442">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1584194294937" />
+    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1584207437442" />
   </component>
 </project>
