@@ -11,7 +11,7 @@ class LinkedListInt
   # initialize(node = nil).
   # @abstract
   # Constructor.
-  # @param [Node] node
+  # @param [Node, NilClass] node
   # A Node.
   # @return [LinkedList]
   # A LinkedList
@@ -43,22 +43,24 @@ class LinkedListInt
   def empty?()
   end
 
-  # ==(ll).
+  # ==(ll = nil).
   # @abstract
   # Attribute equality operator.
+  # @param [LinkedList, NilClass] ll
+  # A LinkedList comparison object.
   # @return [TrueClass, FalseClass]
   # True in the case the attribute object values are equal. False otherwise.
-  def ==(ll)
+  def ==(ll = nil)
   end
 
-  # ===(ll).
+  # ===(ll = nil).
   # @abstract
   # Case equality operator.
-  # @param [LinkedList] ll
-  # A comparison LinkedList.
+  # @param [LinkedList, NilClass] ll
+  # A comparison LinkedList object.
   # @return [TrueClass, FalseClass] identical
   # True in the case the LinkedLists are the same list.
-  def ===(ll)
+  def ===(ll = nil)
   end
 
   # inspect().
@@ -69,61 +71,68 @@ class LinkedListInt
   def inspect()
   end
 
-  # remove_at(index).
+  # remove_at(index = nil).
   # @abstract
   # Removes the Node at index.
   # Irregular cases:
   # 1) index = 0, size > 1.
-  # Resets the removal Node's front and back references nil. Reassigns head
+  # Resets the removal Node's front and back references nil. Reassigns base
   # the node at index 1. Resets the Node's front attribute nil. Decrements
   # size. Garbage collection cleans the removal Node.
   # 2) index = size - 1, size > 1.
   # Resets the removal Node's front and back attributes nil. Resets the node
-  # at index - 1's back attribute nil. Decrements size. Reassigns head.
+  # at index - 1's back attribute nil. Decrements size. Reassigns base.
   # Garbage collection cleans the removed Node.
   # 3) index = 0, size = 1.
-  # Resets the front and back attributes nil. Reassigns head nil. Decrements
+  # Resets the front and back attributes nil. Reassigns base nil. Decrements
   # size.
-  # @param [Integer] index
+  # @param [Integer, NilClass] index
   # The removal location.
-  def remove_at(index)
+  def remove_at(index = nil)
   end
 
-  # insert_at(index, node).
+  # insert_at(index = nil, node = nil).
   # @abstract
   # Inserts the node at index.
   # Irregular cases:
   # 1) index = 0, size = 1.
-  # Assigns head's back attribute node. Sets node's front attribute head.
-  # Sets the head attribute node. Increments size.
+  # Assigns base's back attribute node. Sets node's front attribute base.
+  # Sets the base attribute node. Increments size.
   # 2) index = 0, size = 0.
-  # Assigns head node. Increments size.
-  def insert_at(index, node)
+  # Assigns base node. Increments size.
+  # @param [Integer, NilClass] index
+  # The list insert location.
+  # @param [Node, NilClass] node
+  # The insertion Node.
+  def insert_at(index = nil, node = nil)
   end
 
-  # at(index).
+  # at(index = nil).
   # @abstract
   # Gets the Node at index.
+  # @param [Integer, NilClass] index
+  # The list location.
   # @return [Node] copy
   # The Node at index's copy. self and copy are different objects, and their
   # attributes' objects are different objects.
-  def at(index)
+  def at(index = nil)
   end
 
-  # [](index).
+  # [](index = nil).
   # @abstract
   # Subscript operator. Gets the data value or object at the index.
-  # @param [Integer] index
-  # The data location.
+  # @param [Integer, NilClass] index
+  # The data's location.
   # @return [DataType] data
   # The data in the Node at index.
-  def [](index)
+  def [](index = nil)
   end
 
   # []=(index = nil, data = nil).
   # @abstract
   # Subscript assignment operator. Sets the data attribute in Node at index.
-  # @param []
+  # @param [Integer, NilClass] index
+  # The data's location.
   # @param [DataType] data
   # A data object.
   # @return [NilClass] nil
@@ -141,19 +150,19 @@ class LinkedListInt
   def initialize_copy()
   end
 
-  # head().
+  # base().
   # @abstract
-  # Getter. Gets the head Node's reference.
-  # @return [Node] @head
-  def head()
+  # Getter. Gets the base Node's reference.
+  # @return [Node] @base
+  def base()
   end
 
-  # head=(node = nil).
+  # base=(node = nil).
   # @abstract
-  # Setter. Sets the head node.
-  # @param [Node] node
-  # The Node becoming the head.
-  def head=(node = nil)
+  # Setter. Sets the base node.
+  # @param [Node, NilClass] node
+  # The Node becoming the base.
+  def base=(node = nil)
   end
 
 end

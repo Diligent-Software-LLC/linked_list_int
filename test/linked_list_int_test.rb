@@ -128,21 +128,21 @@ class LinkedListIntTest < Minitest::Test
   # @abstract
   # The initialize_copy method was declared.
   def test_init_copy_dec()
-    assert(@plain.private_methods.include?(:initialize_copoy))
+    assert(@plain.private_methods.include?(:initialize_copy))
   end
 
-  # test_head_get_dec().
+  # test_base_get_dec().
   # @abstract
-  # The head getter method was declared.
-  def test_head_get_dec()
-    assert(@plain.private_methods.include?(:head))
+  # The base getter method was declared.
+  def test_base_get_dec()
+    assert(@plain.private_methods.include?(:base))
   end
 
-  # test_head_set_dec().
+  # test_base_set_dec().
   # @abstract
-  # The head setter was declared.
-  def test_head_set_dec()
-    assert(@plain.private_methods.include?(:head=))
+  # The base setter was declared.
+  def test_base_set_dec()
+    assert(@plain.private_methods.include?(:base=))
   end
 
   # teardown().
