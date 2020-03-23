@@ -54,11 +54,11 @@ class LinkedListIntTest < Minitest::Test
     @plain = LinkedListInt.new()
   end
 
-  # test_copy_constructor().
+  # test_clone().
   # @abstract
   # The copy constructor was declared.
   def test_copy_cons_dec()
-    assert_respond_to(@plain, 'copy_constructor')
+    assert_respond_to(@plain, 'clone')
   end
 
   # test_size_dec().
@@ -89,13 +89,6 @@ class LinkedListIntTest < Minitest::Test
     assert_respond_to(@plain, '===')
   end
 
-  # test_inspect_dec().
-  # @abstract
-  # The inspect method was declared.
-  def test_inspect_dec()
-    assert_respond_to(@plain, 'inspect')
-  end
-
   # test_remove_at_dec().
   # @abstract
   # remove_at was declared.
@@ -122,13 +115,6 @@ class LinkedListIntTest < Minitest::Test
   # The subscript assignment operator was declared.
   def test_subscriptop_dec()
     assert_respond_to(@plain, '[]')
-  end
-
-  # test_init_copy_dec().
-  # @abstract
-  # The initialize_copy method was declared.
-  def test_init_copy_dec()
-    assert(@plain.private_methods.include?(:initialize_copy))
   end
 
   # test_base_get_dec().

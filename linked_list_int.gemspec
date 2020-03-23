@@ -1,9 +1,9 @@
-VERSION = "0.1.0"
+require_relative 'lib/linked_list_int/version'
 
 Gem::Specification.new do |spec|
 
   spec.name                  = "linked_list_int"
-  spec.version               = VERSION
+  spec.version = LinkedListInt::VERSION
   spec.authors               = ["Bradley J. Tannor", "Diligent Software LLC"]
   spec.email                 = ["bradleytannor@gmail.com"]
   spec.summary               = %q{A Linked-List data structure interface.}

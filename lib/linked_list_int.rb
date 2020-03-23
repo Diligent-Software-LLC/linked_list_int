@@ -18,13 +18,12 @@ class LinkedListInt
   def initialize(node = nil)
   end
 
-  # copy_constructor().
+  # clone().
   # @abstract
-  # Copy constructor. Copies self.
-  # @return [LinkedList] copy
-  # self's copy. The copy is a different object, and its attributes refer
-  # different objects.
-  def copy_constructor()
+  # Overridden clone. Clones self.
+  # @return [LinkedList] clone
+  # self's clone. The size and all the lists nodes are clones.
+  def clone()
   end
 
   # size().
@@ -61,14 +60,6 @@ class LinkedListInt
   # @return [TrueClass, FalseClass] identical
   # True in the case the LinkedLists are the same list.
   def ===(ll = nil)
-  end
-
-  # inspect().
-  # @abstract
-  # Diagrammatically represents self.
-  # @return [String] diagram
-  # The LinkedList representation.
-  def inspect()
   end
 
   # remove_at(index = nil).
@@ -140,15 +131,6 @@ class LinkedListInt
   end
 
   private
-
-  # initialize_copy().
-  # @abstract
-  # Copies self.
-  # @return [LinkedList] copy
-  # self's copy. self and copy are different objects. self's and copy's
-  # attributes are different objects.
-  def initialize_copy()
-  end
 
   # base().
   # @abstract

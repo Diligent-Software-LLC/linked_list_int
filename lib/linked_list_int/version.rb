@@ -5,5 +5,5 @@
 # @abstract
 # A Linked-List data structure interface.
 class LinkedListInt
-  VERSION = ::VERSION
+  VERSION = '0.1.1'.freeze()
 end
