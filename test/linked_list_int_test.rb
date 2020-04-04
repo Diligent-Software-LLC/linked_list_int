@@ -1,141 +1,74 @@
-require 'test_helper'
+require_relative 'test_helper'
 
 # LinkedListIntTest.
-# @abstract
-# Tests the LinkedListInt class.
+# @class_description
+#   Tests the LinkedList interface.
 class LinkedListIntTest < Minitest::Test
 
-  # test_version_declared().
-  # @abstract
-  # The version was declared.
-  def test_version_declared()
-    refute_nil(::LinkedListInt::VERSION)
-  end
+  CLASS = LinkedListInt
 
-  # test_travis_c_ex().
-  # @abstract
-  # The travis configuration file exists.
-  def test_travis_c_ex()
+  # test_conf_doc_f_ex().
+  # @description
+  #  The .travis.yml, CODE_OF_CONDUCT.md, Gemfile, LICENSE.txt, and
+  #   README.md files exist.
+  def test_conf_doc_f_ex()
+
     assert_path_exists('.travis.yml')
-  end
-
-  # test_COC_exists().
-  # @abstract
-  # A code of conduct exists.
-  def test_COC_exists()
     assert_path_exists('CODE_OF_CONDUCT.md')
-  end
-
-  # test_gemfile_exists().
-  # @abstract
-  # The Gemfile exists.
-  def test_gemfile_exists()
     assert_path_exists('Gemfile')
-  end
-
-  # test_license_exists().
-  # @abstract
-  # The license exists.
-  def test_license_exists()
     assert_path_exists('LICENSE.txt')
+    assert_path_exists('README.md')
+    assert_path_exists('.yardopts')
+
   end
 
-  # test_readme_exists().
-  # @abstract
-  # The README.md file exists.
-  def test_readme_exists()
-    assert_path_exists('README.md')
+  # test_version_declared().
+  # @description
+  #   The version was declared.
+  def test_version_declared()
+    refute_nil(CLASS::VERSION)
   end
 
   # setup().
-  # @abstract
-  # Set fixtures.
+  # @description
+  #   Set fixtures.
   def setup()
-    @plain = LinkedListInt.new()
+    @pub_i_methods  = CLASS.public_instance_methods(all: false)
+    @priv_i_methods = CLASS.private_instance_methods(all: false)
   end
 
-  # test_clone().
-  # @abstract
-  # The copy constructor was declared.
-  def test_copy_cons_dec()
-    assert_respond_to(@plain, 'clone')
-  end
+  # test_methods_dec().
+  # @description
+  #   initialize, size, empty?, ==, ===, remove, insert, [], []=, iterator,
+  #   base, base=, and at were declared.
+  def test_methods_dec()
 
-  # test_size_dec().
-  # @abstract
-  # The size method was declared.
-  def test_size_dec()
-    assert_respond_to(@plain, 'size')
-  end
+    expected1, expected2, expected3, expected4, expected5, expected6,
+        expected7, expected8, expected9, expected10, expected11, expected12,
+        expected13 =
+        :initialize, :size, :empty?, :==, :===, :remove, :insert, :[],
+            :[]=, :base, :base=, :at, :iterator
 
-  # test_empty_dec().
-  # @abstract
-  # The empty? method was declared.
-  def test_empty_dec()
-    assert_respond_to(@plain, 'empty?')
-  end
+    assert_includes(@pub_i_methods, expected2)
+    assert_includes(@pub_i_methods, expected3)
+    assert_includes(@pub_i_methods, expected4)
+    assert_includes(@pub_i_methods, expected5)
+    assert_includes(@pub_i_methods, expected6)
+    assert_includes(@pub_i_methods, expected7)
+    assert_includes(@pub_i_methods, expected8)
+    assert_includes(@pub_i_methods, expected9)
+    assert_includes(@pub_i_methods, expected13)
+    assert_includes(@priv_i_methods, expected10)
+    assert_includes(@priv_i_methods, expected11)
+    assert_includes(@priv_i_methods, expected12)
+    assert_includes(@priv_i_methods, expected1)
 
-  # test_attr_eqop_dec().
-  # @abstract
-  # The attribute equality operator was declared.
-  def test_attr_eqop_dec()
-    assert_respond_to(@plain, '==')
-  end
-
-  # test_case_eqop_dec().
-  # @abstract
-  # The case equality operator was declared.
-  def test_case_eqop_dec()
-    assert_respond_to(@plain, '===')
-  end
-
-  # test_remove_at_dec().
-  # @abstract
-  # remove_at was declared.
-  def test_remove_at_dec()
-    assert_respond_to(@plain, 'remove_at')
-  end
-
-  # test_insert_at_dec().
-  # @abstract
-  # insert_at was declared.
-  def test_insert_at_dec()
-    assert_respond_to(@plain, 'insert_at')
-  end
-
-  # test_at_dec().
-  # @abstract
-  # at was declared.
-  def test_at_dec()
-    assert_respond_to(@plain, 'at')
-  end
-
-  # test_subscriptop_dec().
-  # @abstract
-  # The subscript assignment operator was declared.
-  def test_subscriptop_dec()
-    assert_respond_to(@plain, '[]')
-  end
-
-  # test_base_get_dec().
-  # @abstract
-  # The base getter method was declared.
-  def test_base_get_dec()
-    assert(@plain.private_methods.include?(:base))
-  end
-
-  # test_base_set_dec().
-  # @abstract
-  # The base setter was declared.
-  def test_base_set_dec()
-    assert(@plain.private_methods.include?(:base=))
   end
 
   # teardown().
-  # @abstract
-  # Cleanup.
+  # @description
+  #   Cleanup.
   def teardown()
   end
 
 end
-

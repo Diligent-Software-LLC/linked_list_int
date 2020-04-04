@@ -1,151 +1,142 @@
 # Copyright (C) 2020 Diligent Software LLC. All rights reserved. Released
-# under the MIT License.
+# under the GNU General Public License, Version 3. Refer LICENSE.txt.
 
-require "linked_list_int/version"
+require_relative "linked_list_int/version"
 
 # LinkedListInt.
 # @abstract
-# A Linked-List data structure interface.
+# @class_description
+#   A LinkedList data structure interface.
+# @attr base [Node]
+#   A node reference. The list's base.
+# @attr size [Integer]
+#   The list's node quantity.
 class LinkedListInt
 
-  # initialize(node = nil).
-  # @abstract
-  # Constructor.
-  # @param [Node, NilClass] node
-  # A Node.
-  # @return [LinkedList]
-  # A LinkedList
-  def initialize(node = nil)
-  end
-
-  # clone().
-  # @abstract
-  # Overridden clone. Clones self.
-  # @return [LinkedList] clone
-  # self's clone. The size and all the lists nodes are clones.
-  def clone()
+  # initialize(data = nil).
+  # @description
+  #   Initializes a list instance.
+  # @param data [Numeric, FalseClass, Symbol, TrueClass, String, Time, NilClass]
+  #   A data type instance.
+  def initialize(data = nil)
   end
 
   # size().
-  # @abstract
-  # Getter. Gets the list size.
-  # @return [Integer] @size
-  # The Node count.
+  # @description
+  #   Gets the list size.
+  # @return [Integer]
+  #   The node quantity.
   def size()
   end
 
   # empty?().
-  # @abstract
-  # Boolean method.
+  # @description
+  #   Boolean method.
   # @return [TrueClass, FalseClass]
-  # True in the case the size is zero. False otherwise.
+  #   True in the case the size is zero. False otherwise.
   def empty?()
   end
 
   # ==(ll = nil).
-  # @abstract
-  # Attribute equality operator.
-  # @param [LinkedList, NilClass] ll
-  # A LinkedList comparison object.
+  # @description
+  #   Equality operator.
+  # @param ll [LinkedList]
+  #   A comparison list.
   # @return [TrueClass, FalseClass]
-  # True in the case the attribute object values are equal. False otherwise.
+  #   True in the case the lists' attributes are equal, and all their nodes
+  #   are equal. False otherwise.
   def ==(ll = nil)
   end
 
   # ===(ll = nil).
-  # @abstract
-  # Case equality operator.
-  # @param [LinkedList, NilClass] ll
-  # A comparison LinkedList object.
-  # @return [TrueClass, FalseClass] identical
-  # True in the case the LinkedLists are the same list.
+  # @description
+  #   Identity comparison operator.
+  # @param ll [LinkedList]
+  #   A comparison list.
+  # @return [TrueClass, FalseClass]
+  #   True in the case the lists are the same list.
   def ===(ll = nil)
   end
 
-  # remove_at(index = nil).
-  # @abstract
-  # Removes the Node at index.
-  # Irregular cases:
-  # 1) index = 0, size > 1.
-  # Resets the removal Node's front and back references nil. Reassigns base
-  # the node at index 1. Resets the Node's front attribute nil. Decrements
-  # size. Garbage collection cleans the removal Node.
-  # 2) index = size - 1, size > 1.
-  # Resets the removal Node's front and back attributes nil. Resets the node
-  # at index - 1's back attribute nil. Decrements size. Reassigns base.
-  # Garbage collection cleans the removed Node.
-  # 3) index = 0, size = 1.
-  # Resets the front and back attributes nil. Reassigns base nil. Decrements
-  # size.
-  # @param [Integer, NilClass] index
-  # The removal location.
-  def remove_at(index = nil)
+  # remove(node = nil).
+  # @description
+  #   Removes the list's node. In the case node is not in the list, removes
+  #   nothing.
+  # @param node [Node]
+  #   The removal node.
+  # @return [NilClass]
+  #   nil.
+  def remove(node = nil)
   end
 
-  # insert_at(index = nil, node = nil).
-  # @abstract
-  # Inserts the node at index.
-  # Irregular cases:
-  # 1) index = 0, size = 1.
-  # Assigns base's back attribute node. Sets node's front attribute base.
-  # Sets the base attribute node. Increments size.
-  # 2) index = 0, size = 0.
-  # Assigns base node. Increments size.
-  # @param [Integer, NilClass] index
-  # The list insert location.
-  # @param [Node, NilClass] node
-  # The insertion Node.
-  def insert_at(index = nil, node = nil)
+  # insert(ins_node = nil, prec_node = nil).
+  # @description
+  #   Inserts a node after a specific node.
+  # @param ins_node [Node]
+  #   The insertion node.
+  # @param prec_node [Node]
+  #   The insertion node's preceding node.
+  # @return [NilClass]
+  #   nil.
+  def insert(node1 = nil, node2 = nil)
   end
 
-  # at(index = nil).
-  # @abstract
-  # Gets the Node at index.
-  # @param [Integer, NilClass] index
-  # The list location.
-  # @return [Node] copy
-  # The Node at index's copy. self and copy are different objects, and their
-  # attributes' objects are different objects.
-  def at(index = nil)
+  # [](position = nil).
+  # @description
+  #   Subscript operator. Gets the data instance at the position.
+  # @param position [Integer]
+  #   The list position.
+  # @return data [Numeric, FalseClass, Symbol, TrueClass, String, Time, NilClass]
+  #   The data at the position.
+  def [](position = nil)
   end
 
-  # [](index = nil).
-  # @abstract
-  # Subscript operator. Gets the data value or object at the index.
-  # @param [Integer, NilClass] index
-  # The data's location.
-  # @return [DataType] data
-  # The data in the Node at index.
-  def [](index = nil)
-  end
-
-  # []=(index = nil, data = nil).
-  # @abstract
-  # Subscript assignment operator. Sets the data attribute in Node at index.
-  # @param [Integer, NilClass] index
-  # The data's location.
-  # @param [DataType] data
-  # A data object.
-  # @return [NilClass] nil
+  # []=(position = nil, data = nil).
+  # @description
+  #   Subscript assignment operator. Sets the data at the specified position.
+  # @param position [Integer]
+  #   The set location.
+  # @param data [Numeric, FalseClass, Symbol, TrueClass, String, Time, NilClass]
+  #   The data setting.
+  # @return [NilClass]
+  #   nil.
   def []=(index = nil, data = nil)
+  end
+
+  # iterator().
+  # @description
+  #   Instantiates a LinkedListIterator.
+  # @return [LinkedListIterator]
+  #   An iterator instance.
+  def iterator()
   end
 
   private
 
   # base().
-  # @abstract
-  # Getter. Gets the base Node's reference.
-  # @return [Node] @base
+  # @description
+  #   Gets the base node's reference.
+  # @return [Node]
+  #   The base node.
   def base()
   end
 
   # base=(node = nil).
-  # @abstract
-  # Setter. Sets the base node.
-  # @param [Node, NilClass] node
-  # The Node becoming the base.
+  # @description
+  #   Sets the base node.
+  # @param node [Node]
+  #   The node becoming the list's base.
   def base=(node = nil)
   end
 
-end
+  # at(position = nil).
+  # @description
+  #   Gets a node at a list position.
+  # @param position [Integer]
+  #   A list position.
+  # @return node_ref [Node]
+  #   The node reference at the list position.
+  def at(position = nil)
+  end
 
+end
