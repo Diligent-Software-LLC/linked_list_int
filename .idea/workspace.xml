@@ -84,10 +84,7 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5940a942-e75a-4e99-8179-274536bca47d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Changelog.md" afterDir="false" />
-    </list>
+    <list default="true" id="5940a942-e75a-4e99-8179-274536bca47d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -251,7 +248,7 @@
       <updated>1584140259898</updated>
       <workItem from="1584140261045" duration="5346000" />
       <workItem from="1584986309939" duration="1471000" />
-      <workItem from="1586025360125" duration="8966000" />
+      <workItem from="1586025360125" duration="9218000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Repository&#10;&#10;Remote branch attached.">
       <created>1584140524976</created>
@@ -302,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586040495948</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Prepare Deployment&#10;&#10;Updated Changelog.md.">
+      <created>1586041747257</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586041747257</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers>
       <YouTrack url="https://macbook-pro.local:8443">
         <option name="defaultSearch" value="project: LinkedList Subsystem: Interface Sprints: 2 #{Prepare Deploy}   " />
@@ -334,7 +338,8 @@
     <MESSAGE value="Changelog.md&#10;&#10;Updated the changelog." />
     <MESSAGE value="Fixed Bugs.&#10;&#10;The initialize_copy() and copy_constructor() methods were polymorphically problematic. Changed copy_constructor(). copy_constructor() is the overriding clone() method, and contains the initialize_copy code." />
     <MESSAGE value="Development Complete&#10;&#10;Updated copyright statements. Fixed YARDocumentation. Fixed 'require' statements. Edited method signatures. Added 'iterator' signature. Removed 'clone' signature. Updated tests. Added a GNU General Public License, Version 3. Edited README.md. Fixed 'Installation' and 'Interface' links. Added a .yardopts file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Development Complete&#10;&#10;Updated copyright statements. Fixed YARDocumentation. Fixed 'require' statements. Edited method signatures. Added 'iterator' signature. Removed 'clone' signature. Updated tests. Added a GNU General Public License, Version 3. Edited README.md. Fixed 'Installation' and 'Interface' links. Added a .yardopts file." />
+    <MESSAGE value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -350,10 +355,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="573" y="358" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.23.1680.975@0.23.1680.975" timestamp="1584194585385" />
-    <state x="0" y="112" key="CommitChangelistDialog2" timestamp="1586040496096">
+    <state x="0" y="112" key="CommitChangelistDialog2" timestamp="1586041746953">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="0" y="112" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1586040496096" />
+    <state x="0" y="112" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1586041746953" />
     <state width="1507" height="271" key="GridCell.Tab.0.bottom" timestamp="1586039640225">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -374,10 +379,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="345" y="149" key="SettingsEditor/0.23.1680.975@0.23.1680.975" timestamp="1584194587587" />
-    <state x="436" y="250" key="Vcs.Push.Dialog.v2" timestamp="1586040755812">
+    <state x="436" y="250" key="Vcs.Push.Dialog.v2" timestamp="1586041759253">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="436" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1586040755812" />
+    <state x="436" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1586041759253" />
     <state x="428" y="235" width="816" height="550" key="find.popup" timestamp="1586038679041">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
