@@ -60,24 +60,24 @@ class LinkedListInt
   def ===(inst = nil)
   end
 
-  # remove(node = nil).
+  # remove(n = nil).
   # @description
-  #   Removes the list's node. In the case node is not in the list, removes
+  #   Removes the list's Node n. In the case n is not in the list, removes
   #   nothing.
-  # @param node [Node]
-  #   The removal node.
+  # @param n [Node]
+  #   The removal Node.
   # @return [NilClass]
   #   nil.
-  def remove(node = nil)
+  def remove(n = nil)
   end
 
-  # insert(ins_node = nil, prec_node = nil).
+  # insert(node1 = nil, node2 = nil).
   # @description
-  #   Inserts a node after a specific node.
-  # @param ins_node [Node]
-  #   The insertion node.
-  # @param prec_node [Node]
-  #   The insertion node's preceding node.
+  #   Inserts a Node after a specific Node.
+  # @param node1 [Node]
+  #   The insertion.
+  # @param node2 [Node]
+  #   The specified precession.
   # @return [NilClass]
   #   nil.
   def insert(node1 = nil, node2 = nil)
@@ -85,29 +85,30 @@ class LinkedListInt
 
   # [](position = nil).
   # @description
-  #   Subscript operator. Gets the data instance at the position.
+  #   Subscript operator. Gets the DataType type instance at the position.
   # @param position [Integer]
   #   The list position.
-  # @return data [Numeric, FalseClass, Symbol, TrueClass, String, Time, NilClass]
+  # @return [DataType]
   #   The data at the position.
   def [](position = nil)
   end
 
-  # []=(position = nil, data = nil).
+  # []=(position = nil, dti = nil).
   # @description
   #   Subscript assignment operator. Sets the data at the specified position.
   # @param position [Integer]
   #   The set location.
-  # @param data [Numeric, FalseClass, Symbol, TrueClass, String, Time, NilClass]
+  # @param data [DataType]
   #   The data setting.
   # @return [NilClass]
   #   nil.
-  def []=(index = nil, data = nil)
+  def []=(position = nil, dti = nil)
   end
 
   # iterator().
   # @description
-  #   Instantiates a LinkedListIterator.
+  #   Instantiates a LinkedListIterator. The iterator's node attribute refers
+  #   self's base.
   # @return [LinkedListIterator]
   #   An iterator instance.
   def iterator()
@@ -133,21 +134,21 @@ class LinkedListInt
   def base()
   end
 
-  # base=(node = nil).
+  # base=(n = nil).
   # @description
   #   Sets the base node.
-  # @param node [Node]
-  #   The node becoming the list's base.
-  def base=(node = nil)
+  # @param n [Node]
+  #   The n becoming the list's base.
+  def base=(n = nil)
   end
 
   # at(position = nil).
   # @description
-  #   Gets a node at a list position.
+  #   Gets a Node at a list position.
   # @param position [Integer]
   #   A list position.
-  # @return node_ref [Node]
-  #   The node reference at the list position.
+  # @return [Node]
+  #   The reference at the list position.
   def at(position = nil)
   end
 

@@ -95,7 +95,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5940a942-e75a-4e99-8179-274536bca47d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/linked_list_int.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/linked_list_int.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,8 +246,8 @@
   </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="SuitableConfigurationIdsCache">
-    <FIRST_MONTH_REVISION values="7f7b66ed508dea7e06776d19691f76dffa29fc94" />
-    <SUITABLE_CONFIGURATIONS_IDS values="bt7" />
+    <FIRST_MONTH_REVISION values="b894dc230e3a77aac3018858ef4501293d3dc698" />
+    <SUITABLE_CONFIGURATIONS_IDS values="bt7;bt14" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -263,7 +264,7 @@
       <workItem from="1586025360125" duration="11577000" />
       <workItem from="1586375367798" duration="1255000" />
       <workItem from="1586805410851" duration="1000" />
-      <workItem from="1586868433956" duration="2802000" />
+      <workItem from="1586868433956" duration="4457000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Repository&#10;&#10;Remote branch attached.">
       <created>1584140524976</created>
@@ -349,7 +350,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586871032693</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Prepare Deployment&#10;&#10;Updated Changelog.md.">
+      <created>1586871276236</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1586871276236</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Prepare Deployment&#10;&#10;Updated Changelog.md.">
+      <created>1586871325260</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1586871325260</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers>
       <YouTrack url="https://macbook-pro.local:8443">
         <option name="defaultSearch" value="project: LinkedList Subsystem:{ No Subsystem } Component:{interface } Sprints: 4 #{Prepare Deploy} " />
@@ -381,10 +396,10 @@
     <MESSAGE value="Changelog.md&#10;&#10;Updated the changelog." />
     <MESSAGE value="Fixed Bugs.&#10;&#10;The initialize_copy() and copy_constructor() methods were polymorphically problematic. Changed copy_constructor(). copy_constructor() is the overriding clone() method, and contains the initialize_copy code." />
     <MESSAGE value="Development Complete&#10;&#10;Updated copyright statements. Fixed YARDocumentation. Fixed 'require' statements. Edited method signatures. Added 'iterator' signature. Removed 'clone' signature. Updated tests. Added a GNU General Public License, Version 3. Edited README.md. Fixed 'Installation' and 'Interface' links. Added a .yardopts file." />
-    <MESSAGE value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
     <MESSAGE value="Setup Complete&#10;&#10;Bumped patch version. Rewrote Gem Specification. Fixed Gem Specification Changelog URI." />
     <MESSAGE value="Development Complete&#10;&#10;Edited method signatures. Fixed initialization bug. 'initialize' takes a DataType instance argument or a Node instance argument. Factored tests. Fixed README.md's Documentation link." />
-    <option name="LAST_COMMIT_MESSAGE" value="Development Complete&#10;&#10;Edited method signatures. Fixed initialization bug. 'initialize' takes a DataType instance argument or a Node instance argument. Factored tests. Fixed README.md's Documentation link." />
+    <MESSAGE value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -408,10 +423,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="565" y="274" key="#com.intellij.tools.ToolEditorDialog/0.23.1680.975@0.23.1680.975" timestamp="1586042473744" />
-    <state x="0" y="112" width="1665" height="831" key="CommitChangelistDialog2" timestamp="1586871032303">
+    <state x="0" y="112" width="1665" height="831" key="CommitChangelistDialog2" timestamp="1586871325298">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="0" y="112" width="1665" height="831" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1586871032303" />
+    <state x="0" y="112" width="1665" height="831" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1586871325298" />
     <state width="1535" height="271" key="GridCell.Tab.0.bottom" timestamp="1586870654158">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -432,10 +447,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="345" y="149" key="SettingsEditor/0.23.1680.975@0.23.1680.975" timestamp="1586042475666" />
-    <state x="436" y="250" key="Vcs.Push.Dialog.v2" timestamp="1586043378810">
+    <state x="436" y="250" key="Vcs.Push.Dialog.v2" timestamp="1586871302959">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="436" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1586043378810" />
+    <state x="436" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1586871302959" />
     <state x="428" y="235" width="816" height="550" key="find.popup" timestamp="1586038679041">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -444,10 +459,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="501" y="235" width="670" height="675" key="run.anything.popup/0.23.1680.975@0.23.1680.975" timestamp="1584216828363" />
-    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1586870701589">
+    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1586872917718">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1586870701589" />
+    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1586872917718" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/linked_list_int@LinkedListIntTest.rcov" NAME="LinkedListIntTest Coverage Results" MODIFIED="1586870650144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="linked_list_int" />
