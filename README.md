@@ -9,8 +9,8 @@ page's installation section.
 
 ## Documentation
 
-- Refer the [Interface](https://docs.diligentsoftware.org/linked-list/interface)
- homepage.
+- Refer the 
+[Interface](https://docs.diligentsoftware.org/linkedlist-1/interface) homepage.
 
 ## Contributing
 

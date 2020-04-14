@@ -13,12 +13,15 @@ require_relative "linked_list_int/version"
 #   The list's node quantity.
 class LinkedListInt
 
-  # initialize(data = nil).
+  # initialize(d_or_n = nil).
   # @description
   #   Initializes a list instance.
-  # @param data [Numeric, FalseClass, Symbol, TrueClass, String, Time, NilClass]
-  #   A data type instance.
-  def initialize(data = nil)
+  # @param d_or_n [DataType, Node]
+  #   A {https://docs.diligentsoftware.org/data#data-types DataType} type
+  #   instance or a Node instance.
+  # @return [LinkedList]
+  #   A LinkedList instance.
+  def initialize(d_or_n = nil)
   end
 
   # size().
@@ -37,25 +40,24 @@ class LinkedListInt
   def empty?()
   end
 
-  # ==(ll = nil).
+  # ==(inst = nil).
   # @description
   #   Equality operator.
-  # @param ll [LinkedList]
-  #   A comparison list.
+  # @param inst [.]
+  #   A comparison instance.
   # @return [TrueClass, FalseClass]
-  #   True in the case the lists' attributes are equal, and all their nodes
-  #   are equal. False otherwise.
-  def ==(ll = nil)
+  #   True in the case the instances' attributes are equal. False otherwise.
+  def ==(inst = nil)
   end
 
-  # ===(ll = nil).
+  # ===(inst = nil).
   # @description
   #   Identity comparison operator.
-  # @param ll [LinkedList]
-  #   A comparison list.
+  # @param inst [.]
+  #   A comparison instance.
   # @return [TrueClass, FalseClass]
-  #   True in the case the lists are the same list.
-  def ===(ll = nil)
+  #   True in the case the instances are identical.
+  def ===(inst = nil)
   end
 
   # remove(node = nil).
@@ -112,6 +114,16 @@ class LinkedListInt
   end
 
   private
+
+  # initialize_node(dti = nil).
+  # @description
+  #   Initializes a Node instance.
+  # @param dti [DataType]
+  #   The Node's data setting.
+  # @return [Node]
+  #   The Node instance.
+  def initialize_node(dti = nil)
+  end
 
   # base().
   # @description
