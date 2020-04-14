@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.0.1, 2020-04-14
+
+### Added
+
+### Edited
+
+- Gem Specification.
+- Method parameter identifiers.
+- linked_list_int_test.rb. Factored public and private method tests.
+
+### Fixed
+
+- Gem Specification Changelog URI.
+- initialization bug. 'initialize' takes a DataType type instance argument or
+ a Node instance argument.
+- README.md's Documentation link.
+
 ## v1.0.0, 2020-04-03
 
 ### Added
