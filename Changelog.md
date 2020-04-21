@@ -1,5 +1,21 @@
 # Changelog
 
+## v2.0.0, 2020-04-21
+
+### Added
+
+- 'shallow_clone()', 'self.attach(n1 = nil)', and 'self.detach(n1 = nil, n2
+ = nil)'.
+- Tests covering additions, removals, and editions.
+
+### Edited
+
+- Dependency versioning.
+- Deleted Travis CI deployment settings.
+- Removed 'at(position = nil)', '[]', and '[]='.
+
+### Fixed
+
 ## v1.0.1, 2020-04-14
 
 ### Added
