@@ -37,8 +37,8 @@ donations are available at $1, $2, $4, $8, and $16. Greatly appreciated.}
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  # Development and testing dependencies
-  spec.add_development_dependency 'bundler', '~> 2.1.0'
-  spec.add_development_dependency 'simplecov', '~> 0.17.0'
+  # Development and testing dependencies.
+  spec.add_development_dependency 'bundler', '~> 2.1'
+  spec.add_development_dependency 'simplecov', '~> 0'
 
 end
