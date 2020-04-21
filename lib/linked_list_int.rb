@@ -24,6 +24,14 @@ class LinkedListInt
   def initialize(d_or_n = nil)
   end
 
+  # shallow_clone().
+  # @description
+  #   Shallowly clones.
+  # @return [LinkedList]
+  #   The clone.
+  def shallow_clone()
+  end
+
   # size().
   # @description
   #   Gets the list size.
@@ -83,28 +91,6 @@ class LinkedListInt
   def insert(node1 = nil, node2 = nil)
   end
 
-  # [](position = nil).
-  # @description
-  #   Subscript operator. Gets the DataType type instance at the position.
-  # @param position [Integer]
-  #   The list position.
-  # @return [DataType]
-  #   The data at the position.
-  def [](position = nil)
-  end
-
-  # []=(position = nil, dti = nil).
-  # @description
-  #   Subscript assignment operator. Sets the data at the specified position.
-  # @param position [Integer]
-  #   The set location.
-  # @param data [DataType]
-  #   The data setting.
-  # @return [NilClass]
-  #   nil.
-  def []=(position = nil, dti = nil)
-  end
-
   # iterator().
   # @description
   #   Instantiates a LinkedListIterator. The iterator's node attribute refers
@@ -112,6 +98,42 @@ class LinkedListInt
   # @return [LinkedListIterator]
   #   An iterator instance.
   def iterator()
+  end
+
+  # self.attach(n1 = nil, n2 = nil).
+  # @description
+  #   Attaches two Nodes.
+  # @param n1 [Node]
+  #   The precession Node. Sets the front attribute the second Node's reference.
+  # @param n2 [Node]
+  #   The consequential Node. Sets the back attribute the preceding Node.
+  # @return [NilClass]
+  #   nil.
+  def self.attach(n1 = nil, n2 = nil)
+  end
+
+  # self.detach(n1 = nil, n2 = nil).
+  # @description
+  #   Detaches two Nodes.
+  # @param n1 [Node]
+  #   The precession. Sets front nil.
+  # @param n2 [Node]
+  #   The consequent. Sets back nil.
+  # @return [NilClass]
+  #   nil.
+  def self.detach(n1 = nil, n2 = nil)
+  end
+
+  private_class_method :attach, :detach
+
+  protected
+
+  # base().
+  # @description
+  #   Gets the base node's reference.
+  # @return [Node]
+  #   The base node.
+  def base()
   end
 
   private
@@ -126,13 +148,6 @@ class LinkedListInt
   def initialize_node(dti = nil)
   end
 
-  # base().
-  # @description
-  #   Gets the base node's reference.
-  # @return [Node]
-  #   The base node.
-  def base()
-  end
 
   # base=(n = nil).
   # @description
@@ -140,16 +155,6 @@ class LinkedListInt
   # @param n [Node]
   #   The n becoming the list's base.
   def base=(n = nil)
-  end
-
-  # at(position = nil).
-  # @description
-  #   Gets a Node at a list position.
-  # @param position [Integer]
-  #   A list position.
-  # @return [Node]
-  #   The reference at the list position.
-  def at(position = nil)
   end
 
 end

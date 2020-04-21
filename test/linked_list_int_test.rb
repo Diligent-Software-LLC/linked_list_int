@@ -33,19 +33,23 @@ class LinkedListIntTest < Minitest::Test
   # @description
   #   Set fixtures.
   def setup()
-    @pub_i_methods  = CLASS.public_instance_methods(all: false)
-    @priv_i_methods = CLASS.private_instance_methods(all: false)
+
+    @pub_i_methods  = CLASS.public_instance_methods(false)
+    @prot_i_methods = CLASS.protected_instance_methods(false)
+    @priv_i_methods = CLASS.private_instance_methods(false)
+    @priv_m         = CLASS.private_methods(false)
+
   end
 
   # test_pub_m_dec().
   # @description
-  #   size, empty?, ==, ===, remove, insert, [], []=, and iterator were
+  #   shallow_clone, size, empty?, ==, ===, remove, insert, and iterator were
   #   declared.
   def test_pub_m_dec()
 
     expected2, expected3, expected4, expected5, expected6, expected7, expected8,
-        expected9, expected13 =
-        :size, :empty?, :==, :===, :remove, :insert, :[], :[]=, :iterator
+        expected9 =
+        :shallow_clone, :size, :empty?, :==, :===, :remove, :insert, :iterator
 
     assert_includes(@pub_i_methods, expected2)
     assert_includes(@pub_i_methods, expected3)
@@ -55,23 +59,31 @@ class LinkedListIntTest < Minitest::Test
     assert_includes(@pub_i_methods, expected7)
     assert_includes(@pub_i_methods, expected8)
     assert_includes(@pub_i_methods, expected9)
-    assert_includes(@pub_i_methods, expected13)
 
+  end
+
+  # test_prot_m_dec().
+  # @description
+  #   base() was declared.
+  def test_prot_m_dec()
+    assert_includes(@prot_i_methods, :base)
   end
 
   # test_priv_m_dec().
   # @description
-  #   initialize, base, base=, at, and initialize_node were declared.
+  #   initialize, base, base=, initialize_node, LinkedListInt.attach(n1 =
+  #   nil, n2 = nil), and LinkedListInt.detach(n1 = nil, n2 = nil) were
+  #   declared.
   def test_priv_m_dec()
 
-    expected10, expected11, expected12, expected1, expected14 =
-        :base, :base=, :at, :initialize, :initialize_node
+    expected12, expected1, expected14, expected15, expected16 =
+        :base=, :initialize, :initialize_node, :attach, :detach
 
-    assert_includes(@priv_i_methods, expected10)
-    assert_includes(@priv_i_methods, expected11)
     assert_includes(@priv_i_methods, expected12)
     assert_includes(@priv_i_methods, expected1)
     assert_includes(@priv_i_methods, expected14)
+    assert_includes(@priv_m, expected15)
+    assert_includes(@priv_m, expected16)
 
   end
 
