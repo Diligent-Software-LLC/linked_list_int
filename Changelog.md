@@ -1,5 +1,26 @@
 # Changelog
 
+## v3.0.0, 2020-05-25
+
+### Added
+
+- 'clone_df()', 'exists(n = nil)', protected 'size=(i = nil)', 'increment_s()', 
+'decrement_s()', 'attach(n1 = nil, n2 = nil)', and 'detach(n1 = nil, n2 = nil)'.
+- Test coverage.
+
+### Edited
+
+- Updated source documentation.
+- Edited Gem Specification email and homepage.
+- Rewrote README.md.
+- 'empty?()' became 'empty()'; '==(inst = nil)' became '==(object = nil)'; 
+'insert(node1 = nil, node2 = nil)' became 'insert(n1 = nil, n2 = nil)'.
+- Deleted '===(inst = nil)', 'iterator()', 
+'LinkedListInt.attach(n1 = nil, n2 = nil)', and 'LinkedListInt.detach(n1
+ = nil, n2 = nil)'.
+
+### Fixed
+
 ## v2.0.0, 2020-04-21
 
 ### Added
