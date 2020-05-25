@@ -41,6 +41,30 @@
           <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ProjectDescriptor" />
         </pathElement>
       </expandedPath>
+      <expandedPath>
+        <pathElement>
+          <option name="myNodeId" value="project6" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ProjectDescriptor" />
+        </pathElement>
+        <pathElement>
+          <option name="myNodeId" value="project8" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ProjectDescriptor" />
+        </pathElement>
+      </expandedPath>
+      <expandedPath>
+        <pathElement>
+          <option name="myNodeId" value="project6" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ProjectDescriptor" />
+        </pathElement>
+        <pathElement>
+          <option name="myNodeId" value="project8" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ProjectDescriptor" />
+        </pathElement>
+        <pathElement>
+          <option name="myNodeId" value="project19" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.ProjectDescriptor" />
+        </pathElement>
+      </expandedPath>
       <selectedPath>
         <pathElement>
           <option name="myNodeId" value="project6" />
@@ -94,8 +118,11 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5940a942-e75a-4e99-8179-274536bca47d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Changelog.md" afterDir="false" />
+    <list default="true" id="5940a942-e75a-4e99-8179-274536bca47d" name="Default Changelist" comment="Prepare Deployment&#10;&#10;Updated Changelog.md.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/linked_list_int/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/linked_list_int/version.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked_list_int.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list_int.gemspec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +292,8 @@
       <workItem from="1586375367798" duration="1255000" />
       <workItem from="1586805410851" duration="1000" />
       <workItem from="1586868433956" duration="4796000" />
-      <workItem from="1587507385127" duration="2659000" />
+      <workItem from="1587507385127" duration="3951000" />
+      <workItem from="1590429303566" duration="550000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Repository&#10;&#10;Remote branch attached.">
       <created>1584140524976</created>
@@ -393,10 +421,17 @@
       <option name="project" value="LOCAL" />
       <updated>1587509730042</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Prepare Deployment&#10;&#10;Updated Changelog.md.">
+      <created>1587510123063</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1587510123063</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers>
       <YouTrack url="https://macbook-pro.local:8443">
-        <option name="defaultSearch" value="project: LinkedList Subsystem:{ No Subsystem } Component:{interface } Sprints: 4 #{Prepare Deployment} " />
+        <option name="defaultSearch" value="project: LinkedList Subsystem:{ No Subsystem } Component:{interface } Sprints: 10 State:{Setup}" />
         <option name="shouldFormatCommitMessage" value="true" />
         <username>admin</username>
       </YouTrack>
@@ -427,11 +462,11 @@
     <MESSAGE value="Development Complete&#10;&#10;Updated copyright statements. Fixed YARDocumentation. Fixed 'require' statements. Edited method signatures. Added 'iterator' signature. Removed 'clone' signature. Updated tests. Added a GNU General Public License, Version 3. Edited README.md. Fixed 'Installation' and 'Interface' links. Added a .yardopts file." />
     <MESSAGE value="Setup Complete&#10;&#10;Bumped patch version. Rewrote Gem Specification. Fixed Gem Specification Changelog URI." />
     <MESSAGE value="Development Complete&#10;&#10;Edited method signatures. Fixed initialization bug. 'initialize' takes a DataType instance argument or a Node instance argument. Factored tests. Fixed README.md's Documentation link." />
-    <MESSAGE value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
     <MESSAGE value="Prepare Deployment&#10;&#10;Minor edits." />
     <MESSAGE value="Setup Complete&#10;&#10;Bumped Major Version. Edited dependency versioning." />
-    <MESSAGE value="Development Complete&#10;&#10;Added 'shallow_clone()', 'self.attach(n1 = nil, n2 = nil)', and 'self.detach(n1 = nil, n2 = nil)'. Edited 'base()' privacy. Added tests covering additions, removals, and editions. Deleted Travis CI deployment settings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Development Complete&#10;&#10;Added 'shallow_clone()', 'self.attach(n1 = nil, n2 = nil)', and 'self.detach(n1 = nil, n2 = nil)'. Edited 'base()' privacy. Added tests covering additions, removals, and editions. Deleted Travis CI deployment settings." />
+    <MESSAGE value="Development Complete&#10;&#10;Added 'shallow_clone()', 'self.attach(n1 = nil, n2 = nil)', and 'self.detach(n1 = nil, n2 = nil)'. Edited 'base()' privacy. Removed 'at(position = nil)', '[]', and '[]=' methods. Added tests covering additions, removals, and editions. Deleted Travis CI deployment settings." />
+    <MESSAGE value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -455,34 +490,38 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="565" y="274" key="#com.intellij.tools.ToolEditorDialog/0.23.1680.975@0.23.1680.975" timestamp="1586042473744" />
-    <state x="0" y="112" width="1665" height="831" key="CommitChangelistDialog2" timestamp="1587509729650">
+    <state x="0" y="112" width="1665" height="831" key="CommitChangelistDialog2" timestamp="1587510206027">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="0" y="112" width="1665" height="831" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1587509729650" />
-    <state width="1557" height="271" key="GridCell.Tab.0.bottom" timestamp="1587509342757">
+    <state x="0" y="112" width="1665" height="831" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1587510206027" />
+    <state x="43" y="434" key="GitRewordDialog" timestamp="1587510163496">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1557" height="271" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1587509342757" />
-    <state width="1557" height="271" key="GridCell.Tab.0.center" timestamp="1587509342750">
+    <state x="43" y="434" key="GitRewordDialog/0.23.1680.975@0.23.1680.975" timestamp="1587510163496" />
+    <state width="1557" height="271" key="GridCell.Tab.0.bottom" timestamp="1587511563419">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1557" height="271" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1587509342750" />
-    <state width="1557" height="271" key="GridCell.Tab.0.left" timestamp="1587509342749">
+    <state width="1557" height="271" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1587511563419" />
+    <state width="1557" height="271" key="GridCell.Tab.0.center" timestamp="1587511563418">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1557" height="271" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1587509342749" />
-    <state width="1557" height="271" key="GridCell.Tab.0.right" timestamp="1587509342750">
+    <state width="1557" height="271" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1587511563418" />
+    <state width="1557" height="271" key="GridCell.Tab.0.left" timestamp="1587511563418">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1557" height="271" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1587509342750" />
+    <state width="1557" height="271" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1587511563418" />
+    <state width="1557" height="271" key="GridCell.Tab.0.right" timestamp="1587511563418">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state width="1557" height="271" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1587511563418" />
     <state x="345" y="149" key="SettingsEditor" timestamp="1587507728480">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="345" y="149" key="SettingsEditor/0.23.1680.975@0.23.1680.975" timestamp="1587507728480" />
-    <state x="436" y="250" key="Vcs.Push.Dialog.v2" timestamp="1586873225448">
+    <state x="436" y="250" key="Vcs.Push.Dialog.v2" timestamp="1587511518051">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="436" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1586873225448" />
+    <state x="436" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1587511518051" />
     <state x="428" y="235" width="816" height="550" key="find.popup" timestamp="1586038679041">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -491,10 +530,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="501" y="235" width="670" height="675" key="run.anything.popup/0.23.1680.975@0.23.1680.975" timestamp="1584216828363" />
-    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1587509815115">
+    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1590429687987">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1587509815115" />
+    <state x="501" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1590429687987" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/linked_list_int@LinkedListIntTest.rcov" NAME="LinkedListIntTest Coverage Results" MODIFIED="1587509337455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="linked_list_int" />

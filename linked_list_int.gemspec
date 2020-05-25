@@ -6,14 +6,15 @@ Gem::Specification.new do |spec|
   spec.name                  = "linked_list_int"
   spec.version               = LinkedListInt::VERSION
   spec.authors               = ["Diligent Software LLC"]
-  spec.email                 = ["diligentsoftwarellc@gmail.com"]
+  spec.email                 = ["contact@diligentsoftware.org"]
   spec.summary               = %q{A LinkedList data structure interface.}
   spec.description           = %q{A LnkedList data structure interface.
 Donations support continuous improvement and maintenance. The aim is a reliable,
 integrable, and endurable LinkedList library. Make a donation at the project's
 collective page: https://opencollective.com/linkedlist. One-time and recurring
 donations are available at $1, $2, $4, $8, and $16. Greatly appreciated.}
-  spec.homepage              = "https://docs.diligentsoftware.org/linkedlist"
+  spec.homepage              =
+      "https://docs.diligentsoftware.org/linkedlist-1/interface"
   spec.license               = "GPL-3.0"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.6.5")
 

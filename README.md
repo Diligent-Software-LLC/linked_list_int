@@ -1,16 +1,16 @@
 # linked_list_int [![Gem Version](https://badge.fury.io/rb/linked_list_int.svg)](https://badge.fury.io/rb/linked_list_int) ![Gem](https://img.shields.io/gem/dt/linked_list_int) [![Build Status](https://travis-ci.com/Diligent-Software-LLC/linked_list_int.svg?branch=master)](https://travis-ci.com/Diligent-Software-LLC/linked_list_int)
 
-A LinkedList data structure interface.
+A LinkedList data structure library's interface.
 
 ## Installation
 
-- Refer the [Packages](https://docs.diligentsoftware.org/linkedlist-1/packages) 
-page's installation section.
+- Refer Interface's 
+[Packages](https://docs.diligentsoftware.org/linkedlist-1/packages#interface).
 
 ## Documentation
 
-- Refer the 
-[Interface](https://docs.diligentsoftware.org/linkedlist-1/interface) homepage.
+- Refer Interface's 
+[Homepage](https://docs.diligentsoftware.org/linkedlist-1/interface).
 
 ## Contributing
 

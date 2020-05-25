@@ -5,10 +5,10 @@
 # @abstract
 # @class_description
 #   A LinkedList data structure interface.
-# @attr base [Node]
-#   A node reference. The list's base.
+# @attr base [NodeAdapter]
+#   The list's base.
 # @attr size [Integer]
-#   The list's node quantity.
+#   The list's element quantity.
 class LinkedListInt
-  VERSION = '2.0.0'.freeze()
+  VERSION = '3.0.0'.freeze()
 end
