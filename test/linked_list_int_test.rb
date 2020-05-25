@@ -5,12 +5,14 @@ require_relative 'test_helper'
 #   Tests the LinkedList interface.
 class LinkedListIntTest < Minitest::Test
 
+  # Constants.
   CLASS = LinkedListInt
 
   # test_conf_doc_f_ex().
   # @description
-  #   The .travis.yml, CODE_OF_CONDUCT.md, Gemfile, LICENSE.txt, and
-  #   README.md files exist.
+  #   The .travis.yml, CODE_OF_CONDUCT.md, Gemfile, LICENSE.txt, README.md,
+  #   .yardopts, .gitignore, Changelog.md, CODE_OF_CONDUCT.md,
+  #   linked_list_int.gemspec, Gemfile.lock, and Rakefile files exist.
   def test_conf_doc_f_ex()
 
     assert_path_exists('.travis.yml')
@@ -19,6 +21,12 @@ class LinkedListIntTest < Minitest::Test
     assert_path_exists('LICENSE.txt')
     assert_path_exists('README.md')
     assert_path_exists('.yardopts')
+    assert_path_exists('.gitignore')
+    assert_path_exists('Changelog.md')
+    assert_path_exists('CODE_OF_CONDUCT.md')
+    assert_path_exists('linked_list_int.gemspec')
+    assert_path_exists('Gemfile.lock')
+    assert_path_exists('Rakefile')
 
   end
 
@@ -37,53 +45,50 @@ class LinkedListIntTest < Minitest::Test
     @pub_i_methods  = CLASS.public_instance_methods(false)
     @prot_i_methods = CLASS.protected_instance_methods(false)
     @priv_i_methods = CLASS.private_instance_methods(false)
-    @priv_m         = CLASS.private_methods(false)
 
   end
 
-  # test_pub_m_dec().
+  # test_pubm_dec().
   # @description
-  #   shallow_clone, size, empty?, ==, ===, remove, insert, and iterator were
-  #   declared.
-  def test_pub_m_dec()
+  #   'shallow_clone()', 'clone_df()', 'size()', 'exists(n = nil)', 'empty()',
+  #   '==(object = nil)', 'remove(n = nil)', and 'insert(n1 = nil, n2 = nil)'
+  #   were declared.
+  def test_pubm_dec()
 
-    expected2, expected3, expected4, expected5, expected6, expected7, expected8,
-        expected9 =
-        :shallow_clone, :size, :empty?, :==, :===, :remove, :insert, :iterator
-
-    assert_includes(@pub_i_methods, expected2)
-    assert_includes(@pub_i_methods, expected3)
-    assert_includes(@pub_i_methods, expected4)
-    assert_includes(@pub_i_methods, expected5)
-    assert_includes(@pub_i_methods, expected6)
-    assert_includes(@pub_i_methods, expected7)
-    assert_includes(@pub_i_methods, expected8)
-    assert_includes(@pub_i_methods, expected9)
+    assert_includes(@pub_i_methods, :shallow_clone)
+    assert_includes(@pub_i_methods, :clone_df)
+    assert_includes(@pub_i_methods, :size)
+    assert_includes(@pub_i_methods, :exists)
+    assert_includes(@pub_i_methods, :empty)
+    assert_includes(@pub_i_methods, :==)
+    assert_includes(@pub_i_methods, :remove)
+    assert_includes(@pub_i_methods, :insert)
 
   end
 
-  # test_prot_m_dec().
+  # test_protm_dec().
   # @description
-  #   base() was declared.
+  #   'size=(i = nil)' and 'base()' were declared.
   def test_prot_m_dec()
     assert_includes(@prot_i_methods, :base)
+    assert_includes(@prot_i_methods, :size=)
   end
 
-  # test_priv_m_dec().
+  # test_privm_dec().
   # @description
-  #   initialize, base, base=, initialize_node, LinkedListInt.attach(n1 =
-  #   nil, n2 = nil), and LinkedListInt.detach(n1 = nil, n2 = nil) were
+  #   'initialize(d_or_n = nil)', 'initialize_node(dti = nil)',
+  #   'base=(n = nil)', 'increment_s()', 'decrement_s()',
+  #   'attach(n1 = nil, n2 = nil)', and 'detach(n1 = nil, n2 = nil)' were
   #   declared.
-  def test_priv_m_dec()
+  def test_privm_dec()
 
-    expected12, expected1, expected14, expected15, expected16 =
-        :base=, :initialize, :initialize_node, :attach, :detach
-
-    assert_includes(@priv_i_methods, expected12)
-    assert_includes(@priv_i_methods, expected1)
-    assert_includes(@priv_i_methods, expected14)
-    assert_includes(@priv_m, expected15)
-    assert_includes(@priv_m, expected16)
+    assert_includes(@priv_i_methods, :initialize)
+    assert_includes(@priv_i_methods, :initialize_node)
+    assert_includes(@priv_i_methods, :base=)
+    assert_includes(@priv_i_methods, :increment_s)
+    assert_includes(@priv_i_methods, :decrement_s)
+    assert_includes(@priv_i_methods, :attach)
+    assert_includes(@priv_i_methods, :detach)
 
   end
 
